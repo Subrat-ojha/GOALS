@@ -100,6 +100,7 @@
     { name: 'drift', hint: 'jump to ## drift', run: () => scrollToEl(document.getElementById('drift')) },
     { name: 'notice', hint: 'jump to ## notice', run: () => scrollToEl(document.getElementById('notice')) },
     { name: 'end', hint: 'jump to ## end', run: () => scrollToEl(document.getElementById('end')) },
+    { name: 'quotes', hint: 'jump to ## quotes', run: () => scrollToEl(document.getElementById('quotes')) },
     { name: 'top', hint: 'back to the beginning', run: () => scrollToEl(document.getElementById('main')) },
     { name: 'theme', hint: 'invert black and white', run: toggleInvert },
     {

@@ -60,3 +60,34 @@ So you keep going. You get some things right, you repeat some mistakes, you love
 people who are also making it up. The file stays open. The cursor blinks.
 
 That is not a failure of the story. That is the story.
+
+---
+
+## quotes
+
+Borrowed lines, kept because they earned it.
+
+"The unexamined life is not worth living." - Socrates
+
+"No man ever steps in the same river twice." - Heraclitus
+
+"It is not that we have a short time to live, but that we waste a great deal of it." - Seneca
+
+"Not all those who wander are lost." - J.R.R. Tolkien
+
+"To live is the rarest thing in the world. Most people exist, that is all." - Oscar Wilde
+
+"We are what we pretend to be, so we must be careful about what we pretend to be." - Kurt Vonnegut
+
+"He who has a why to live for can bear almost any how." - Friedrich Nietzsche
+
+"In the depth of winter, I finally learned that within me there lay an invincible summer." - Albert Camus
+
+"Life is either a daring adventure or nothing." - Helen Keller
+
+"Life is what happens to you while you're busy making other plans." - John Lennon
+
+"In three words I can sum up everything I've learned about life: it goes on." - Robert Frost
+
+"Your time is limited, so don't waste it living someone else's life." - Steve Jobs
+

@@ -309,6 +309,16 @@ deliberately: commit the deletion (`git rm "93 new.jpg"`) or restore it
 
 ## Changelog
 
+### v0.2.0 (2026-10-28)
+
+- fix: ascii renderer init referenced removed `bamboo`/`monk`/`lotus` consts and
+  threw on load, leaving all art slots empty; it now reads from the `ART` map.
+- feat: `## quotes` section after `## end` with twelve attributed quotes, per the
+  owner's request for the best quotes ever written. This section intentionally
+  sits outside the one-pull-quote content rule, which still governs the essay.
+- palette gains `:quotes`; word count and line numbering pick the section up
+  automatically.
+
 ### v0.1.0 (2026-10-23)
 
 - Initial release: single page, four sections, editor chrome.
