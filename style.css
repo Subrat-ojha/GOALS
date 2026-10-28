@@ -457,7 +457,13 @@ h3 {
 .args .tr {
   margin-bottom: 0.6rem;
   color: var(--dim);
-  font-style: italic;
+  font-size: 0.8em;
+}
+
+.args .say {
+  font-size: 1.12em;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.2rem;
 }
 
 .args .src {
