@@ -248,6 +248,20 @@ deliberately: commit the deletion (`git rm "93 new.jpg"`) or restore it
 
 ## Changelog
 
+### v0.7.0 (2026-10-28)
+
+- feat: quotes curated for depth per the owner's request that the set "feel
+  selective". Trimmed 17 popular-but-light lines (Jobs, Keller, Lennon,
+  Gandhi, Mother Teresa, both Roosevelts, Einstein, Anne Frank, Mandela,
+  Goethe, Hugo, William James, one Angelou, one Epictetus, Dalai Lama) and
+  the shakily attributed Rilke "only journey" line. Added eight deeper,
+  solidly attributed quotes: Seneca on imagination, Marcus Aurelius on the
+  obstacle, Pascal on sitting quietly, Nietzsche on the dancing star,
+  Thoreau on quiet desperation, Rilke on loving the questions, Hesse on the
+  inner sanctuary, Simone Weil on attention. Set is now 43 quotes, each
+  with its highlighter phrase; payload drops to ~29.5KB.
+
+
 ### v0.6.0 (2026-10-28)
 
 - feat: colour and highlighter marks in `## quotes` per the owner's request.
