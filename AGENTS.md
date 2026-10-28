@@ -248,14 +248,23 @@ deliberately: commit the deletion (`git rm "93 new.jpg"`) or restore it
 
 ## Changelog
 
+### v0.5.0 (2026-10-28)
+
+- feat: `## quotes` grows from 12 to 52 attributed lines per the owner's request
+  for "many quotes". Attributions were chosen for solid sourcing; commonly
+  misattributed lines (Twain's "two most important days", Churchill's "success
+  is not final", Eliot's "never too late") were deliberately left out.
+- Payload stays under budget: 28.7KB across the three files.
+
+
 ### v0.4.0 (2026-10-28)
 
 - remove: all ASCII art (bamboo, monk, lotus, dividers, noscript fallbacks,
   `ascii.js`) per the owner's request; the page is prose, quotes and chrome only.
 - `ascii.js` deleted; hero is a single text column; unused CSS (`--art-font`,
   `.art`, `.art-static`, `.divider`) removed; three files total.
-- Earlier animation work lives on the abandoned `feat/ascii-loops` branch if it
-  is ever wanted back.
+- Earlier animation work was discarded; the `feat/ascii-loops` branch was deleted
+  unmerged.
 
 
 ### v0.2.0 (2026-10-28)
