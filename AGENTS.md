@@ -248,6 +248,14 @@ deliberately: commit the deletion (`git rm "93 new.jpg"`) or restore it
 
 ## Changelog
 
+### v0.7.1 (2026-10-28)
+
+- fix: owner saw only yellow highlights on the live site. Cause: stylesheet
+  was cached for an hour (max-age=3600), so browsers kept the old
+  style.css, where mark.hl falls back to the browser default yellow. Added
+  ?v= cache-busting to the css/js links and set both to max-age=0,
+  must-revalidate. Bump the ?v= value whenever style.css or main.js changes.
+
 ### v0.7.0 (2026-10-28)
 
 - feat: quotes curated for depth per the owner's request that the set "feel
