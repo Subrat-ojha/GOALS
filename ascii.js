@@ -108,9 +108,9 @@
   }
 
   function init() {
-    create({ el: document.getElementById('art-bamboo'), art: bamboo });
-    create({ el: document.getElementById('art-monk'), art: monk });
-    create({ el: document.getElementById('art-lotus'), art: lotus });
+    create({ el: document.getElementById('art-bamboo'), art: ART.bamboo });
+    create({ el: document.getElementById('art-monk'), art: ART.monk });
+    create({ el: document.getElementById('art-lotus'), art: ART.lotus });
   }
 
   window.LifeAscii = { create, ART };
