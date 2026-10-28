@@ -410,6 +410,58 @@ mark.hl {
 #quotes p:nth-of-type(4n) .quote-by { color: var(--acc-p); }
 #quotes p:nth-of-type(4n+1) .quote-by { color: var(--acc-b); }
 
+/* ---------- nav and arguments ---------- */
+
+.nav {
+  display: flex;
+  gap: 1.1rem;
+}
+
+.nav a {
+  color: var(--dim);
+  text-decoration: none;
+}
+
+.nav a:hover,
+.nav a[aria-current] {
+  color: var(--fg);
+}
+
+.nav a[aria-current] {
+  border-bottom: 1px solid var(--fg);
+}
+
+.doc a {
+  color: var(--fg);
+  text-decoration-color: var(--faint);
+  text-underline-offset: 0.2em;
+}
+
+h3 {
+  margin: 2.2rem 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.args .case {
+  margin-bottom: 0.6rem;
+}
+
+.args .reply {
+  margin-bottom: 0.5rem;
+  padding-left: 1.1rem;
+  border-left: 1px solid var(--line);
+  color: var(--dim);
+}
+
+.args .src {
+  font-size: 0.85em;
+  color: var(--faint);
+}
+
+#theist h3 { color: var(--acc-b); }
+#atheist h3 { color: var(--acc-p); }
+
 /* ---------- responsive ---------- */
 
 @media (max-width: 900px) {
@@ -424,6 +476,10 @@ mark.hl {
 }
 
 @media (max-width: 540px) {
+  .winbtns {
+    display: none;
+  }
+
   .statusbar > .status-info {
     display: none;
   }

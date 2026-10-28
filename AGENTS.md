@@ -38,6 +38,7 @@ intentional and explained in `README.md`.
 ```
 .
 ├── index.html        # markup, essay, chrome, meta, noscript art
+├── arguments.html    # second page: arguments about God, with replies
 ├── style.css         # tokens, chrome, typography, print, reduced motion
 ├── main.js           # palette, keyboard nav, invert, progress
 ├── docs/
@@ -162,7 +163,7 @@ markup, CSS, or the renderer.
 
 ### Performance targets
 
-- ≤ 32KB uncompressed across the three files.
+- ≤ 32KB uncompressed per page (that page's HTML plus the shared css and js).
 - Four requests; no third-party origins.
 - LCP < 1s on throttled mobile; CLS 0.00.
 - No long tasks over 50ms; at most one active rAF loop.
@@ -247,6 +248,17 @@ deliberately: commit the deletion (`git rm "93 new.jpg"`) or restore it
 - GitHub Pages / Netlify static hosting documentation
 
 ## Changelog
+
+### v0.8.0 (2026-10-28)
+
+- feat: `arguments.html`, a second page per the owner's request: ten arguments
+  about God, five for the believer against the atheist and five for the atheist
+  against the believer, each with its strongest reply and a source link. Chosen
+  for depth over count. Added a two-link nav (`life`, `arguments`) to both
+  title bars, `:arguments` / `:life` palette commands, and a cache header for
+  the new page. Both pages share `style.css` and `main.js`; the 32KB budget is
+  now per page (index 31.3KB, arguments 26.8KB with the shared files).
+  Bumped `?v=` to 0.8.0.
 
 ### v0.7.1 (2026-10-28)
 
