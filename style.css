@@ -6,6 +6,14 @@
   --dim: #9a9a9a;
   --faint: #4a4a4a;
   --line: #232323;
+  --hl-y: rgba(255, 209, 102, 0.28);
+  --hl-g: rgba(112, 224, 146, 0.26);
+  --hl-p: rgba(255, 138, 190, 0.26);
+  --hl-b: rgba(110, 180, 255, 0.26);
+  --acc-y: #e8c468;
+  --acc-g: #7fdc9b;
+  --acc-p: #f29ac0;
+  --acc-b: #8fc3f5;
   --pad: clamp(1.25rem, 5vw, 4rem);
   --measure: 68ch;
   --font: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, "Liberation Mono", monospace;
@@ -17,6 +25,10 @@
   --dim: #555;
   --faint: #999;
   --line: #d8d8d8;
+  --acc-y: #8a6d1a;
+  --acc-g: #2e7d4f;
+  --acc-p: #b03060;
+  --acc-b: #1f5fa8;
 }
 
 *,
@@ -379,6 +391,25 @@ dialog::backdrop {
   font-size: 0.92em;
 }
 
+mark.hl {
+  padding: 0.02em 0.12em;
+  border-radius: 0.15em;
+  background: var(--hl-y);
+  color: inherit;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+#quotes p:nth-of-type(4n+2) mark.hl { background: var(--hl-y); }
+#quotes p:nth-of-type(4n+3) mark.hl { background: var(--hl-g); }
+#quotes p:nth-of-type(4n) mark.hl { background: var(--hl-p); }
+#quotes p:nth-of-type(4n+1) mark.hl { background: var(--hl-b); }
+
+#quotes p:nth-of-type(4n+2) .quote-by { color: var(--acc-y); }
+#quotes p:nth-of-type(4n+3) .quote-by { color: var(--acc-g); }
+#quotes p:nth-of-type(4n) .quote-by { color: var(--acc-p); }
+#quotes p:nth-of-type(4n+1) .quote-by { color: var(--acc-b); }
+
 /* ---------- responsive ---------- */
 
 @media (max-width: 900px) {
@@ -445,5 +476,11 @@ dialog::backdrop {
 
   a {
     color: inherit;
+  }
+
+  mark.hl {
+    background: none;
+    padding: 0;
+    border-bottom: 1px solid var(--fg);
   }
 }

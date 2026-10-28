@@ -1,6 +1,6 @@
 # life
 
-A minimal, monochrome, single-page site about arriving, drifting, and noticing.
+A minimal single-page site about arriving, drifting, and noticing. Monochrome essay; the quotes carry soft colour accents and highlighter marks.
 It looks like a file open in an editor: title bar, line numbers, status bar.
 
 No frameworks, no build step, no dependencies, no tracking. Three files.

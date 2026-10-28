@@ -1,10 +1,10 @@
 ---
 name: "life"
-description: "A minimal, monochrome single-page site about arriving, drifting, and noticing. It is laid out like a file open in an editor — title bar, line numbers, status bar. Hand-written HTML, CSS, and JavaScript; no frameworks, no build step, no dependencies, no tracking."
+description: "A minimal single-page site about arriving, drifting, and noticing, with restrained colour accents on the quotes. It is laid out like a file open in an editor — title bar, line numbers, status bar. Hand-written HTML, CSS, and JavaScript; no frameworks, no build step, no dependencies, no tracking."
 category: "Static Site"
 author: "Subrat Ojha"
 authorUrl: "https://github.com/Subrat-ojha"
-tags: ["minimal", "monochrome", "single-page", "no-dependencies"]
+tags: ["minimal", "single-page", "no-dependencies"]
 lastUpdated: "2026-10-23"
 ---
 
@@ -14,7 +14,7 @@ lastUpdated: "2026-10-23"
 
 `life` is one page. It opens like `life.md` in an editor and contains a short essay
 in four movements — begin, drift, notice, end — followed by a `## quotes` section.
-The point is text and a strict black-and-white palette.
+The point is text; the essay keeps a strict black-and-white palette, while the quotes carry restrained colour accents and highlighter marks.
 
 It exists because a page about ordinary life should not need a framework, a font
 CDN, or an analytics script. The whole site is three files and behaves correctly with
@@ -247,6 +247,16 @@ deliberately: commit the deletion (`git rm "93 new.jpg"`) or restore it
 - GitHub Pages / Netlify static hosting documentation
 
 ## Changelog
+
+### v0.6.0 (2026-10-28)
+
+- feat: colour and highlighter marks in `## quotes` per the owner's request.
+  One key phrase per quote sits behind a translucent marker swipe
+  (`mark.hl`), cycling four muted accents (yellow, green, pink, blue) via
+  `nth-of-type`; attribution lines pick up the same accent. Accents darken
+  under `:theme` invert; marks degrade to an underline in print.
+- The essay, hero and chrome stay monochrome. No JS changes; pure CSS.
+
 
 ### v0.5.0 (2026-10-28)
 
