@@ -251,7 +251,7 @@ deliberately: commit the deletion (`git rm "93 new.jpg"`) or restore it
 
 ### v0.8.0 (2026-10-28)
 
-- feat: `arguments.html` (plain English; ends with ten quick replies), a second page per the owner's request: ten arguments
+- feat: `arguments.html` (plain English; ends with ten quick replies and five Sanskrit verses on judging a fake godman), a second page per the owner's request: ten arguments
   about God, five for the believer against the atheist and five for the atheist
   against the believer, each with its strongest reply and a source link. Chosen
   for depth over count. Added a two-link nav (`life`, `arguments`) to both

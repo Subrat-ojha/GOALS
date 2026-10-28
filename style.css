@@ -454,6 +454,12 @@ h3 {
   color: var(--dim);
 }
 
+.args .tr {
+  margin-bottom: 0.6rem;
+  color: var(--dim);
+  font-style: italic;
+}
+
 .args .src {
   font-size: 0.85em;
   color: var(--faint);
@@ -461,6 +467,8 @@ h3 {
 
 #theist h3 { color: var(--acc-b); }
 #atheist h3 { color: var(--acc-p); }
+#cracks h3 { color: var(--acc-g); }
+#verses h3 { color: var(--acc-y); }
 
 /* ---------- responsive ---------- */
 

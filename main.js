@@ -104,6 +104,7 @@
     { name: 'believer', sec: 'theist', hint: 'jump to the believer case', run: () => scrollToEl(document.getElementById('theist')) },
     { name: 'atheist', sec: 'atheist', hint: 'jump to the atheist case', run: () => scrollToEl(document.getElementById('atheist')) },
     { name: 'replies', sec: 'cracks', hint: 'jump to quick replies', run: () => scrollToEl(document.getElementById('cracks')) },
+    { name: 'verses', sec: 'verses', hint: 'jump to sanskrit verses', run: () => scrollToEl(document.getElementById('verses')) },
     { name: 'arguments', page: true, hint: 'open the arguments page', run: () => { location.href = 'arguments.html'; } },
     { name: 'life', page: true, hint: 'open the essay page', run: () => { location.href = './'; } },
     { name: 'top', hint: 'back to the beginning', run: () => scrollToEl(document.getElementById('main')) },
