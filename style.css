@@ -9,7 +9,6 @@
   --pad: clamp(1.25rem, 5vw, 4rem);
   --measure: 68ch;
   --font: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, "Liberation Mono", monospace;
-  --art-font: clamp(9px, 1.25vw, 12px);
 }
 
 [data-inverted] {
@@ -132,10 +131,6 @@ main section[id] {
 /* ---------- hero ---------- */
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
-  gap: clamp(1rem, 4vw, 3rem);
   padding: 1rem 0 2.5rem;
   border-bottom: 1px solid var(--line);
 }
@@ -182,50 +177,6 @@ blockquote p {
   margin: 0;
 }
 
-/* ---------- ascii art ---------- */
-
-.art {
-  display: flex;
-  justify-content: flex-end;
-  color: var(--fg);
-}
-
-.art pre,
-.art-static {
-  margin: 0;
-  font-family: var(--font);
-  font-size: var(--art-font);
-  line-height: 1;
-  letter-spacing: 0;
-  white-space: pre;
-  user-select: none;
-}
-
-.art pre:empty {
-  display: none;
-}
-
-.divider {
-  display: flex;
-  justify-content: center;
-  margin: 2.75rem 0;
-  overflow: hidden;
-  color: var(--fg);
-}
-
-.divider pre {
-  margin: 0;
-  font-size: var(--art-font);
-  line-height: 1;
-  letter-spacing: 0;
-  white-space: pre;
-  user-select: none;
-}
-
-.divider pre:empty {
-  display: none;
-}
-
 /* ---------- ending ---------- */
 
 .ending {
@@ -233,11 +184,6 @@ blockquote p {
   padding-top: 2.5rem;
   border-top: 1px solid var(--line);
   text-align: center;
-}
-
-.ending .art {
-  justify-content: center;
-  margin-bottom: 1.5rem;
 }
 
 .eof {
@@ -446,16 +392,6 @@ dialog::backdrop {
   }
 }
 
-@media (max-width: 620px) {
-  .hero {
-    grid-template-columns: 1fr;
-  }
-
-  .art {
-    display: none;
-  }
-}
-
 @media (max-width: 540px) {
   .statusbar > .status-info {
     display: none;
@@ -480,14 +416,6 @@ dialog::backdrop {
   }
 }
 
-/* ---------- no script ---------- */
-
-@media (scripting: none) {
-  .art pre:not(.art-static) {
-    display: none;
-  }
-}
-
 /* ---------- print ---------- */
 
 @media print {
@@ -505,8 +433,6 @@ dialog::backdrop {
 
   .titlebar,
   .statusbar,
-  .art,
-  .divider,
   .skip,
   dialog,
   .cursor {

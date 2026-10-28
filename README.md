@@ -1,10 +1,9 @@
 # life
 
 A minimal, monochrome, single-page site about arriving, drifting, and noticing.
-It looks like a file open in an editor: title bar, line numbers, status bar, and
-three ASCII organisms that grow, swim, and pulse.
+It looks like a file open in an editor: title bar, line numbers, status bar.
 
-No frameworks, no build step, no dependencies, no tracking. Four files.
+No frameworks, no build step, no dependencies, no tracking. Three files.
 
 ## Run locally
 
@@ -20,7 +19,6 @@ Then open <http://localhost:8000>.
 | --- | --- |
 | `index.html` | Markup, essay, chrome, meta |
 | `style.css` | Tokens, typography, layout, print, reduced motion |
-| `ascii.js` | Frame player and the bamboo / monk / lotus art |
 | `main.js` | Command palette, invert, keyboard nav, scroll progress |
 
 ## Controls

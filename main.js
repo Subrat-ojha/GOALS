@@ -10,7 +10,7 @@
 
   let line = 0;
   doc.querySelectorAll(':scope > *').forEach((el) => {
-    if (el.matches('p, h1, h2, blockquote, .divider, .ending')) {
+    if (el.matches('p, h1, h2, blockquote, .ending')) {
       el.dataset.line = String(++line);
     }
   });
