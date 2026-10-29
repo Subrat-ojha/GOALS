@@ -249,6 +249,11 @@ deliberately: commit the deletion (`git rm "93 new.jpg"`) or restore it
 
 ## Changelog
 
+### v0.8.3 (2026-10-29)
+
+- feat: quote highlights and attributions on the life page now alternate soft
+  blue and pink, matching the arguments page. Pure CSS.
+
 ### v0.8.0 (2026-10-28)
 
 - feat: `arguments.html` (plain English; ends with ten quick replies and five Sanskrit verses on judging a fake godman), a second page per the owner's request: ten arguments

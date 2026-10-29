@@ -400,15 +400,11 @@ mark.hl {
   -webkit-box-decoration-break: clone;
 }
 
-#quotes p:nth-of-type(4n+2) mark.hl { background: var(--hl-y); }
-#quotes p:nth-of-type(4n+3) mark.hl { background: var(--hl-g); }
-#quotes p:nth-of-type(4n) mark.hl { background: var(--hl-p); }
-#quotes p:nth-of-type(4n+1) mark.hl { background: var(--hl-b); }
+#quotes p:nth-of-type(odd) mark.hl { background: var(--hl-b); }
+#quotes p:nth-of-type(even) mark.hl { background: var(--hl-p); }
 
-#quotes p:nth-of-type(4n+2) .quote-by { color: var(--acc-y); }
-#quotes p:nth-of-type(4n+3) .quote-by { color: var(--acc-g); }
-#quotes p:nth-of-type(4n) .quote-by { color: var(--acc-p); }
-#quotes p:nth-of-type(4n+1) .quote-by { color: var(--acc-b); }
+#quotes p:nth-of-type(odd) .quote-by { color: var(--acc-b); }
+#quotes p:nth-of-type(even) .quote-by { color: var(--acc-p); }
 
 /* ---------- nav and arguments ---------- */
 
