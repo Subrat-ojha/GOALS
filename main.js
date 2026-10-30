@@ -95,12 +95,18 @@
   const help = document.getElementById('help');
   const openBtn = document.getElementById('open-palette');
 
-  const commands = [
-    { name: 'begin', hint: 'jump to ## begin', run: () => scrollToEl(document.getElementById('begin')) },
-    { name: 'drift', hint: 'jump to ## drift', run: () => scrollToEl(document.getElementById('drift')) },
-    { name: 'notice', hint: 'jump to ## notice', run: () => scrollToEl(document.getElementById('notice')) },
-    { name: 'end', hint: 'jump to ## end', run: () => scrollToEl(document.getElementById('end')) },
-    { name: 'quotes', hint: 'jump to ## quotes', run: () => scrollToEl(document.getElementById('quotes')) },
+  const all = [
+    { name: 'begin', sec: 'begin', hint: 'jump to ## begin', run: () => scrollToEl(document.getElementById('begin')) },
+    { name: 'drift', sec: 'drift', hint: 'jump to ## drift', run: () => scrollToEl(document.getElementById('drift')) },
+    { name: 'notice', sec: 'notice', hint: 'jump to ## notice', run: () => scrollToEl(document.getElementById('notice')) },
+    { name: 'end', sec: 'end', hint: 'jump to ## end', run: () => scrollToEl(document.getElementById('end')) },
+    { name: 'quotes', sec: 'quotes', hint: 'jump to ## quotes', run: () => scrollToEl(document.getElementById('quotes')) },
+    { name: 'believer', sec: 'theist', hint: 'jump to the believer case', run: () => scrollToEl(document.getElementById('theist')) },
+    { name: 'atheist', sec: 'atheist', hint: 'jump to the atheist case', run: () => scrollToEl(document.getElementById('atheist')) },
+    { name: 'replies', sec: 'cracks', hint: 'jump to quick replies', run: () => scrollToEl(document.getElementById('cracks')) },
+    { name: 'verses', sec: 'verses', hint: 'jump to sanskrit verses', run: () => scrollToEl(document.getElementById('verses')) },
+    { name: 'arguments', page: true, hint: 'open the arguments page', run: () => { location.href = 'arguments.html'; } },
+    { name: 'life', page: true, hint: 'open the essay page', run: () => { location.href = './'; } },
     { name: 'top', hint: 'back to the beginning', run: () => scrollToEl(document.getElementById('main')) },
     { name: 'theme', hint: 'invert black and white', run: toggleInvert },
     {
@@ -111,6 +117,13 @@
       }
     }
   ];
+
+  const here = location.pathname.split('/').pop();
+  const commands = all.filter((c) => {
+    if (c.sec) return document.getElementById(c.sec);
+    if (c.page) return c.name === 'arguments' ? here !== 'arguments.html' : here === 'arguments.html';
+    return true;
+  });
 
   let filtered = commands.slice();
   let active = 0;

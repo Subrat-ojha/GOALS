@@ -400,15 +400,77 @@ mark.hl {
   -webkit-box-decoration-break: clone;
 }
 
-#quotes p:nth-of-type(4n+2) mark.hl { background: var(--hl-y); }
-#quotes p:nth-of-type(4n+3) mark.hl { background: var(--hl-g); }
-#quotes p:nth-of-type(4n) mark.hl { background: var(--hl-p); }
-#quotes p:nth-of-type(4n+1) mark.hl { background: var(--hl-b); }
+#quotes p:nth-of-type(odd) mark.hl { background: var(--hl-b); }
+#quotes p:nth-of-type(even) mark.hl { background: var(--hl-p); }
 
-#quotes p:nth-of-type(4n+2) .quote-by { color: var(--acc-y); }
-#quotes p:nth-of-type(4n+3) .quote-by { color: var(--acc-g); }
-#quotes p:nth-of-type(4n) .quote-by { color: var(--acc-p); }
-#quotes p:nth-of-type(4n+1) .quote-by { color: var(--acc-b); }
+#quotes p:nth-of-type(odd) .quote-by { color: var(--acc-b); }
+#quotes p:nth-of-type(even) .quote-by { color: var(--acc-p); }
+
+/* ---------- nav and arguments ---------- */
+
+.nav {
+  display: flex;
+  gap: 1.1rem;
+}
+
+.nav a {
+  color: var(--dim);
+  text-decoration: none;
+}
+
+.nav a:hover,
+.nav a[aria-current] {
+  color: var(--fg);
+}
+
+.nav a[aria-current] {
+  border-bottom: 1px solid var(--fg);
+}
+
+.doc a {
+  color: var(--fg);
+  text-decoration-color: var(--faint);
+  text-underline-offset: 0.2em;
+}
+
+h3 {
+  margin: 2.2rem 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.args .case {
+  margin-bottom: 0.6rem;
+}
+
+.args .reply {
+  margin-bottom: 0.5rem;
+  padding-left: 1.1rem;
+  border-left: 1px solid var(--line);
+  color: var(--dim);
+}
+
+.args .tr {
+  margin-bottom: 0.6rem;
+  color: var(--dim);
+  font-size: 0.8em;
+}
+
+.args .say {
+  font-size: 1.12em;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.2rem;
+}
+
+.args .src {
+  font-size: 0.85em;
+  color: var(--faint);
+}
+
+#theist h3 { color: var(--acc-b); }
+#atheist h3 { color: var(--acc-p); }
+#cracks h3 { color: var(--acc-g); }
+#verses h3 { color: var(--acc-y); }
 
 /* ---------- responsive ---------- */
 
@@ -424,6 +486,10 @@ mark.hl {
 }
 
 @media (max-width: 540px) {
+  .winbtns {
+    display: none;
+  }
+
   .statusbar > .status-info {
     display: none;
   }
